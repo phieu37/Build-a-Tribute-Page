@@ -1,0 +1,38 @@
+body{
+    background-color: bisque;
+    font-family: sans-serif;
+    text-align: center; 
+}
+
+#title{
+    font-size: 150%;
+    padding-top: 10px;
+}
+
+#image{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#img-div {
+    background-color: rgb(255, 241, 241);
+    margin: auto;
+    padding: 10px;
+  }
+/* bỏ qua h3 các p/tử còn lại trong #tribute-info đều bị ảnh hưởng 
+width: 60%(nhận 60% độ rộng ban đầu của chính nó)*/
+  #tribute-info :not(h3){   
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    line-height: 1.5rem;
+  }
+/* trong khung nhìn dưới 500px nhận hiệu ứng */
+  @media ( max-width: 500px) {
+    #tribute-info :not(h3) {
+      width: 90%;  
+      text-align: left;   
+    }
+  }
